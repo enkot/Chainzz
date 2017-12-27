@@ -1,0 +1,35 @@
+{
+  "name": "chainblocks",
+  "version": "1.0.0",
+  "description": "Simple Blockchain over HTTP",
+  "main": "blockchain.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.61.0",
+    "nodemon": "^1.14.3"
+  },
+  "scripts": {
+    "dev": "babel-node src/index.js",
+    "build": "babel src/ -d lib/",
+    "debug": "nodemon --inspect --exec babel-node ./src/index.js",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enkot/ChainBlocks.git"
+  },
+  "author": "Enkot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enkot/ChainBlocks/issues"
+  },
+  "homepage": "https://github.com/enkot/ChainBlocks#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "uuid": "^3.1.0"
+  }
+}
